@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71C0639E-7FB9-4515-978A-DB53B789E832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2E84BDBB-E737-4539-8770-076ADD8A30C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartianRobots.Core", "src\MartianRobots.Core\MartianRobots.Core.csproj", "{53FD0DDC-B58C-4155-919E-57526038E579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53FD0DDC-B58C-4155-919E-57526038E579} = {71C0639E-7FB9-4515-978A-DB53B789E832}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53FD0DDC-B58C-4155-919E-57526038E579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FD0DDC-B58C-4155-919E-57526038E579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FD0DDC-B58C-4155-919E-57526038E579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FD0DDC-B58C-4155-919E-57526038E579}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
