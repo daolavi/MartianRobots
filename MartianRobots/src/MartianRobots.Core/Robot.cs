@@ -1,18 +1,22 @@
 ﻿namespace MartianRobots.Core;
 
-public class Robot(int x, int y, char orientation)
+public class Robot(int x, int y, char orientation, Mars mars)
 {
+    private static readonly char[] Directions = ['N', 'E', 'S', 'W'];
     private int X { get; set; } = x;
     private int Y { get; set; } = y;
     private char Orientation { get; set; } = orientation;
-    private bool IsLost { get; } = false;
-    private static readonly char[] Directions = ['N', 'E', 'S', 'W'];
-    
+    private bool IsLost { get; set; }
+    private Mars Mars { get; } = mars;
+
     public void Execute(string instructions)
     {
         foreach (var instruction in instructions)
         {
-            if (IsLost) break;
+            if (IsLost)
+            {
+                break;
+            }
 
             switch (instruction)
             {
@@ -43,25 +47,39 @@ public class Robot(int x, int y, char orientation)
 
     private void MoveForward()
     {
-        if (IsLost)
-        {
-            return;
-        }
+        if (IsLost) return;
+
+        var newX = X;
+        var newY = Y;
 
         switch (Orientation)
         {
             case 'N': 
-                Y++; 
+                newY++; 
                 break;
             case 'E': 
-                X++; 
+                newX++; 
                 break;
             case 'S': 
-                Y--; 
+                newY--; 
                 break;
             case 'W': 
-                X--; 
+                newX--; 
                 break;
+        }
+
+        if (!Mars.IsOnGrid(newX, newY))
+        {
+            if (!Mars.HasScent(X, Y))
+            {
+                Mars.AddScent(X, Y);
+                IsLost = true;
+            }
+        }
+        else
+        {
+            X = newX;
+            Y = newY;
         }
     }
 }

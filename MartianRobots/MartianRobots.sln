@@ -6,6 +6,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2E84BDBB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartianRobots.Core", "src\MartianRobots.Core\MartianRobots.Core.csproj", "{53FD0DDC-B58C-4155-919E-57526038E579}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartianRobots.Core.Unit.Tests", "tests\MartianRobots.Core.Unit.Tests\MartianRobots.Core.Unit.Tests.csproj", "{CC8F8C0B-746F-4F98-97F3-D5C434C1E53E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{53FD0DDC-B58C-4155-919E-57526038E579} = {71C0639E-7FB9-4515-978A-DB53B789E832}
+		{CC8F8C0B-746F-4F98-97F3-D5C434C1E53E} = {2E84BDBB-E737-4539-8770-076ADD8A30C4}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{53FD0DDC-B58C-4155-919E-57526038E579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{53FD0DDC-B58C-4155-919E-57526038E579}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53FD0DDC-B58C-4155-919E-57526038E579}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53FD0DDC-B58C-4155-919E-57526038E579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8F8C0B-746F-4F98-97F3-D5C434C1E53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8F8C0B-746F-4F98-97F3-D5C434C1E53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8F8C0B-746F-4F98-97F3-D5C434C1E53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8F8C0B-746F-4F98-97F3-D5C434C1E53E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
